@@ -1,0 +1,7 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    min-height: 700px;
+}
+
