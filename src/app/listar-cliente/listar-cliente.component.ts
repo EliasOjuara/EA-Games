@@ -32,4 +32,14 @@ export class ListarClienteComponent {
       }
     )
   }
+  excluir(id: number){
+    this._clienteService.excluirCliente(id).subscribe(
+      cliente => {
+        this.listarClientes();
+      },
+      err => {alert("Erro ao Excluir")}
+    );
+      this._router.navigate(["/lista"]);
+  }
+    
 }
